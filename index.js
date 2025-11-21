@@ -62,3 +62,13 @@ const Student = mongoose.model("Student", studentSchema);
 // .catch((err) => {
 //     console.log(err);
 // });
+
+//find by id
+
+Student.findById("691f413c19101abde9b6e0a5")
+.then((res) => {
+    console.log(res);
+})
+.catch((err) => {
+    console.log(err);
+});
