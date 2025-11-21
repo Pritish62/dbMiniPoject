@@ -55,7 +55,7 @@ const Student = mongoose.model("Student", studentSchema);
 
 
 // //find funct
-// Student.find({ age : {$gt: 20}})
+// Student.find({ })
 // .then((res) => {
 //     console.log(res);
 // })
@@ -65,10 +65,19 @@ const Student = mongoose.model("Student", studentSchema);
 
 //find by id
 
-Student.findById("691f413c19101abde9b6e0a5")
-.then((res) => {
-    console.log(res);
-})
-.catch((err) => {
-    console.log(err);
-});
+// Student.findById("691f413c19101abde9b6e0a5")
+// .then((res) => {
+//     console.log(res);
+// })
+// .catch((err) => {
+//     console.log(err);
+// });
+
+//update
+
+// Student.updateMany({age: {$gt: 20}}, {city: "betul"}) 
+// .then((res) => {
+//     console.log(res);
+// }) .catch((err) => {
+//     console.log(err);
+// });
