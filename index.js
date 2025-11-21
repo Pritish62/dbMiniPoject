@@ -31,7 +31,7 @@ const Student = mongoose.model("Student", studentSchema);
 // .then( res => { console.log(res)})
 // .catch( err => {console.log(err)});
 
-//Method- 2 usrint create()
+//Method- 2 insert create()
 
 // Student.create({
 //     name: "ratindra",
@@ -51,4 +51,14 @@ const Student = mongoose.model("Student", studentSchema);
 // ])
 // .then( (res) => {
 //     console.log(res);
+// });
+
+
+// //find funct
+// Student.find({ age : {$gt: 20}})
+// .then((res) => {
+//     console.log(res);
+// })
+// .catch((err) => {
+//     console.log(err);
 // });
